@@ -106,7 +106,7 @@ def pregunta_03():
             # Paso 3: Construya un modelo de regresión lineal.
             (
                 "linearRegression",
-                linearRegression(),
+                LinearRegression(),
             ),
         ],
     )
@@ -161,7 +161,7 @@ def pregunta_04():
     # Compute el error cuadratico medio de entrenamiento y prueba. Redondee los
     # valores a dos decimales.
 
-    mse_train = mean_squeared_error(
+    mse_train = mean_squared_error(
         y_train,
         y_train_pred,
     ).round(2)
